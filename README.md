@@ -15,4 +15,16 @@ During the recent decades, the city have suffered the violence of two major gang
 
 We collected Google Earth Satellite images from each of the households included in the survey sample. Images collected are centered at the GPS location of each household and they were stored as 480x480 RGB files. In total, we collected 2314 images, where 54 percent of them belong to gang dominated area.
 
-We processed the images in Python, and for each one we obtained a 480x480 3D matrix. Then, we re-scaled this data by transforming it into a grey scale and therefore we reduced it to a one-dimensional matrix. Figure 2 shows an example for a Gang and No Gang location and their respective collected data is plotted in a histogram.  
+We processed the images in Python, and for each one we obtained a 480x480 3D matrix. Then, we re-scaled this data by transforming it into a grey scale and therefore we reduced it to a one-dimensional matrix. We can see  an example for a Gang and No Gang location and their respective collected data is plotted in a histogram.  
+
+![NOGANG_Sat](NOGANG_Sat.png) ![NOGANG_Hist](NOGANG_Hist.png)
+![GANG_Sat](GANG_Sat.png) ![GANG_Hist](GANG_Hist.png)
+
+## Empirical Strategy
+
+
+We want to study whether the images from Gang and Non Gang areas are systematically different. Melnikov, Schmidt-Padilla and Sviatschi (2019) 
+find worse development outcomes inside gang-controlled neighborhoods (like fewer years of education, lower earnings, less
+consumption of durable goods) and no differences in public goods (like schools and health availability). From this evidence, we can expect that gang controlled area might have worse house conditions (i.e. smaller houses), to have infrastructure more suitable for crime (i.e. warehouses, more access to big roads,etc). It is also plausible that people invest more inside their households than outside (which is what we will capture) in order not to call the attention of  gangs.   \\
+
+Ideally, in a regular setting we could have different outcome variables and we test whether the variable $\mathbbm{1}= Gang $ (belonging to a Gang dominated area) is significant or not. However, when working with images, we are not allowed to use a linear regression. This is because the data from images is in more than 1 dimension. For this reason, we will use an alternative approach. \\

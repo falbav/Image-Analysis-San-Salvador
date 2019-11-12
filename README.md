@@ -15,6 +15,8 @@ During the recent decades, the city have suffered the violence of two major gang
 
 We collected Google Earth Satellite images from each of the households included in the survey sample. Images collected are centered at the GPS location of each household and they were stored as 480x480 RGB files. In total, we collected 2314 images, where 54 percent of them belong to gang dominated area.
 
+#### See the code on the R file: "PlottingBoundaries.R"
+
 We processed the images in Python, and for each one we obtained a 480x480 3D matrix. Then, we re-scaled this data by transforming it into a grey scale and therefore we reduced it to a one-dimensional matrix. We can see  an example for a Gang and No Gang location and their respective collected data is plotted in a histogram.  
 
 ### Non Gang Domincated Area Example
@@ -38,7 +40,7 @@ We estimated the parameters of 4 different models (each kernel type). The result
 
  ![SVMAccu](SVMTestAccu.png)
 
-See the code on the Python file: "ImageAnalysisSanSalvadorSVM.py"
+#### See the code on the Python file: "ImageAnalysisSanSalvadorSVM.py"
 
 ### Convolutional Neural Network
 
@@ -51,7 +53,7 @@ Our results are the following:
  ![CNNAccu](Model_accu.png)
  ![CNNLoss](Model_loss.png)
 
-See the code on the Python file: "ImageAnalysisSanSalvadorCNN.py"
+#### See the code on the Python file: "ImageAnalysisSanSalvadorCNN.py"
 
 
 

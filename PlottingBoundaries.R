@@ -26,8 +26,9 @@ library(tidyverse)
 setwd("/")
 
 ## Google API Key
-# Save Api Key (Fabiola's)
+# Save Api Key 
 register_google(key = "")
+
 ## Importing ShapeFiles and Data 
 
 # San Salvador City Shapefile
@@ -99,6 +100,7 @@ Gang.Boud.Hybrid + theme_void()
 
 ## Now can we try to sample some areas around does boundaries:(using Mica's sample)
 ## generate id
+
 fieldwork<-mutate(fieldwork,id=rownames(fieldwork)) 
 id <- fieldwork$id
 df<-fieldwork %>%  unite(center,lat,long,sep = ",")

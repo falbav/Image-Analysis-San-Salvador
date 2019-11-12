@@ -1,7 +1,7 @@
 """
 This code explores Different Models of Convolutional Neural Networks
 for the San Salvador Gang Project
-@author: falba
+@author: falba and ftop
 """
 import os
 import google_streetview.api

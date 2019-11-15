@@ -30,7 +30,10 @@ We processed the images in Python, and for each one we obtained a 480x480 3D mat
 We want to study whether the images from Gang and Non Gang areas are systematically different. Melnikov, Schmidt-Padilla and Sviatschi (2019) find worse development outcomes inside gang-controlled neighborhoods (like fewer years of education, lower earnings, less
 consumption of durable goods) and no differences in public goods (like schools and health availability). From this evidence, we can expect that gang controlled area might have worse house conditions (i.e. smaller houses), to have infrastructure more suitable for crime (i.e. warehouses, more access to big roads,etc). It is also plausible that people invest more inside their households than outside (which is what we will capture) in order not to call the attention of  gangs.
 
-Ideally, in a regular setting we could have different outcome variables and we test whether the variable 1=Gang (belonging to a Gang dominated area) is significant or not. However, when working with images, we are not allowed to use a linear regression. This is because the data from images is in more than 1 dimension. For this reason, we will use an alternative approach.
+Ideally, in a regular setting we could have different outcome variables and we test whether the variable 1=Gang (belonging to a Gang dominated area) is significant or not. However, when working with images, using something like linear regression, does not work. This is because the data from images is in more than 1 dimension. For this reason, we will use  alternative approaches.
+
+### Wasserstein Distance
+
 
 ### Supporting Vector Machine
 

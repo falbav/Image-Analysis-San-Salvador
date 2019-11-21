@@ -19,7 +19,7 @@ We collected Google Earth Satellite images from each of the households included 
 
 We processed the images in Python, and for each one we obtained a 480x480 3D matrix. Then, we re-scaled this data by transforming it into a grey scale and therefore we reduced it to a one-dimensional matrix. We can see  an example for a Gang and No Gang location and their respective collected data is plotted in a histogram.  
 
-### Non Gang Domincated Area Example
+### Non Gang Dominated Area Example
 ![NOGANG_Sat](NOGANG_Sat.png) ![NOGANG_Hist](NOGANG_Hist.png)
 
 ### Gang Dominated Area Example

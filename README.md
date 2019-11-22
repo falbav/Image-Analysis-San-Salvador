@@ -28,11 +28,15 @@ We processed the images in Python, and for each one we obtained a 480x480 3D mat
 ## Empirical Strategy
 
 We want to study whether the images from Gang and Non Gang areas are systematically different. Melnikov, Schmidt-Padilla and Sviatschi (2019) find worse development outcomes inside gang-controlled neighborhoods (like fewer years of education, lower earnings, less
-consumption of durable goods) and no differences in public goods (like schools and health availability). From this evidence, we can expect that gang controlled area might have worse house conditions (i.e. smaller houses), to have infrastructure more suitable for crime (i.e. warehouses, more access to big roads,etc). It is also plausible that people invest more inside their households than outside (which is what we will capture) in order not to call the attention of  gangs.
+consumption of durable goods) and no differences in public goods (like schools and health availability). They also found that after the deportation of gang leaders, the locations with gang presence experienced significantly lower growth in luminosity than areas that were
+not exposed to gangs.
 
-Ideally, in a regular setting we could have different outcome variables and we test whether the variable 1=Gang (belonging to a Gang dominated area) is significant or not. However, when working with images, using something like linear regression, does not work. This is because the data from images is in more than 1 dimension. For this reason, we will use  alternative approaches.
+From this evidence, we can expect that gang controlled area might have worse house conditions (i.e. smaller houses). It is also expected  to have infrastructure that is more suitable for crime (i.e. warehouses, more access to big roads,etc). Another hypothesis is that people might invest more inside their households than outside, in order not to call the attention of gangs. This means we can also no find any significant differences. 
+
+Ideally, in a regular setting we could have different outcome variables and we test whether the variable 1=Gang (belonging to a Gang dominated area) is significant or not. However, when working with images, using something like linear regression, does not work. This is because the data from images is processed in more than 1 dimension. For this reason, we will use  alternative approaches.
 
 ### Wasserstein Distance
+First, 
 
 
 ### Supporting Vector Machine
@@ -47,7 +51,7 @@ We estimated the parameters of 4 different models (each kernel type). The result
 
 ### Convolutional Neural Network
 
-Convolutional Neural Network (CNN) is a deep Learning algorithm which can take in an input (such and image, text, etc), assign importance (learnable weights and biases) to various aspects/objects in the image and be able to differentiate them. 
+Convolutional Neural Network (CNN) is a deep Learning algorithm which can take in an input (such and image, text, etc), assign weights and biases to various aspects/objects in the image and be able to differentiate or classify them. 
 
 We tested several models, including one with regularization. Our best model was the one with two 2d Convolution Filter and two (L1 and L2) regularizers. We estimated this model using a Binary Crossentropy Loss Function.
 

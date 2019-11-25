@@ -36,8 +36,7 @@ From this evidence, we can expect that gang controlled area might have worse hou
 Ideally, in a regular setting we could have different outcome variables and we test whether the variable 1=Gang (belonging to a Gang dominated area) is significant or not. However, when working with images, using something like linear regression, does not work. This is because the data from images is processed in more than 1 dimension. For this reason, we will use  alternative approaches.
 
 ### Wasserstein Distance
-First, 
-
+First, we want to test whether the images are
 
 ### Supporting Vector Machine
 
